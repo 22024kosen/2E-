@@ -15,25 +15,19 @@
  </ul>
 <img src="スクリーンショット (46).png">
  <p>画像表示</p>
+ <button id="showimg">画像を表示</button>
+ <img id="image1" style="display: none;" src="スクリーンショット (46).png">
+ 
  <script>
-   var img;
-    function sampleimg1(){
-    img = document.getElementById(“image_file”);
-    img.src = “スクリーンショット (46).png”;
-    }
-    function sampleimg2(){
-    img = document.getElementById(“image_file”);
-    img.src = “img/sample2.png”;
-    }
-    function sampleimg3(){
-    img = document.getElementById(“image_file”);
-    img.src = “img/sample3.png”;
-    }
+ document.getElementByld("showimg").addEventListener("click",function() {
+ var image = document.getElementByld("image1");
+ if (image.style.display === "none") {
+  image.style.display = "block";
+ } else {
+  image.style.display = "none";
+ }
+ });
  </script>
-<input type="button"><button onclick="sampleimg1()">画像1</button>
-<input type=”button” onclick=”sampleimg2()” value=”画像2″>
-<input type=”button” onclick=”sampleimg3()” value=”画像3″>
 <br><br>
-<img id=”image_file”src=””/>
 </body>
 </html>
