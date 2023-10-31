@@ -13,7 +13,7 @@
 <li><a href=https://www2.ct.osakafu-u.ac.jp>大阪公立大学工業高等専門学校</a></li>
 <li><a href=http://swa.city-osaka.ed.jp/swas/index.php?id=j632363>佃中学校</a></li>
  </ul>
-<img id = "image_file">
+    <img id="image_file"src=""/>
     <p>画像の表示</p>
 
     <script>
@@ -21,26 +21,12 @@
 
     function sampleimg1(){
     img = document.getElementById(“image_file”);
-    img.src = “image1.png”;
-    }
-
-    function sampleimg2(){
-    img = document.getElementById(“image_file”);
-    img.src = “img/sample2.png”;
-    }
-
-    function sampleimg3(){
-    img = document.getElementById(“image_file”);
-    img.src = “img/sample3.png”;
+    img.src = “img/image1.png”;
     }
 
     </script>
-
     <input type="button" onclick="sampleimg1()" value="画像1">
-    <input type="button" onclick="sampleimg2()" value="画像2">
-    <input type="button" onclick="sampleimg3()" value="画像3">
     <br><br>
-    <img id=”image_file”src=””/>
 
 </body>
 </html>
